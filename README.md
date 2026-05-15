@@ -95,7 +95,7 @@ index.js
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/sprinthub-backend.git
+git clone https://github.com/rizkys-code/taskFlowLikeaJira.git
 ```
 
 ---
