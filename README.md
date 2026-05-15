@@ -1,6 +1,6 @@
 # SprintHub Backend API
 
-Backend API untuk aplikasi task management mirip Jira/Trello menggunakan:
+Backend API for a task management platform inspired by Jira and Trello:
 
 * Node.js
 * Express.js
