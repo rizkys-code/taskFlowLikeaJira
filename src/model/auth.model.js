@@ -6,13 +6,13 @@ export const registerUser = (email,password,role)=>{
 }
 
 export const findUserByEmail = (email)=>{
-    const sql = "SELECT email, password, role FROM users WHERE email = ?"
+    const sql = "SELECT id, email, password, role FROM users WHERE email = ?"
     return db.execute(sql,[email])
 }
 
 export const updateRefreshToken = (userId, refreshToken)=>{
-    const sql = "UPDATE users SET refres_token WHERE id = ?"
-    return db.query(sql,[userId, refreshToken])
+    const sql = "UPDATE users SET refresh_token = ? WHERE id = ?"
+    return db.execute(sql,[refreshToken, userId])
 }
 
 export const findUserByRefreshToken = (refreshToken)=>{
